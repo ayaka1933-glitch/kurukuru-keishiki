@@ -48,3 +48,15 @@ main{transform-origin:50% 35%}main[aria-busy=true]{pointer-events:none}.landscap
 @media(prefers-reduced-motion:reduce){.photo-options .landscape-image,.photo-options .landscape.selected .landscape-image{animation:none!important}.brand:hover .brand-orbit{transform:none}}
 
 .side-selector{padding:24px 5% 0;display:flex;justify-content:flex-end}.side-tabs{display:flex;align-items:center;gap:18px}.side-tabs button{position:relative;padding:5px 0 8px;border:0;background:none;color:var(--muted);font-size:13px;letter-spacing:.1em;opacity:.65;transition:opacity .2s}.side-tabs button span{font-size:9px;letter-spacing:.14em;margin-left:6px}.side-tabs button::after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:currentColor;transform:scaleX(0);transition:transform .25s}.side-tabs button[aria-pressed=true]{color:var(--ink);opacity:1}.side-tabs button[aria-pressed=true]::after{transform:scaleX(1)}.side-tabs button:hover{opacity:1}.side-divider{color:var(--muted);font-size:11px;opacity:.45}.homepage{padding-top:35px}@media(max-width:600px){.side-selector{padding:18px 6% 0}.side-tabs{gap:15px}.homepage{padding-top:24px}}
+
+/* Photographs with a mount and a fine frame; handwritten opening words. */
+@font-face{font-family:Yomogi;src:url('assets/fonts/Yomogi-Regular.ttf') format('truetype');font-weight:400;font-style:normal;font-display:swap}
+.home-text h1,.back-home .home-text h1{font-family:Yomogi,var(--sans);font-size:clamp(44px,4.8vw,70px);font-weight:400;letter-spacing:-.04em;line-height:1.5;margin:20px 0 25px;font-synthesis:none}
+.selection h1{font-family:Yomogi,var(--sans);font-weight:400;letter-spacing:-.04em;font-synthesis:none}
+.home-visual,.back-home .home-visual{padding:0 0 0 15px}
+.home-frame{padding:clamp(18px,2.7vw,38px);background:#fcfcf9;border:1px solid #99a9ae;box-shadow:inset 0 0 0 5px #f1f1ed,inset 0 0 0 6px #e0e3e2,0 22px 45px #16365318;transform:rotate(1deg)}
+.home-visual .home-frame img,.back-home .home-visual .home-frame img{width:100%;height:auto;aspect-ratio:1.5;object-fit:contain;border-radius:0;padding:0;border:1px solid #233d4926;background:#e6ecec;box-shadow:none}
+.home-visual figcaption{font-size:9px;letter-spacing:.15em;margin-top:24px;padding-left:3px}
+.back-home .home-frame{border-color:#7d8a96;background:#e9e9e3;box-shadow:inset 0 0 0 5px #c4c9cb,inset 0 0 0 6px #8b979d,0 22px 45px #08152250;transform:rotate(-1deg)}
+@media(max-width:600px){.home-text h1,.back-home .home-text h1{font-size:44px;line-height:1.5;margin:18px 0 22px}.home-visual,.back-home .home-visual{padding:0 3px;margin-top:8px}.home-frame{padding:22px}.home-visual figcaption{margin-top:19px}}
+@media(max-width:600px){.back-home .home-text h1{font-size:38px}}
